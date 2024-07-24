@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function clearScreen () {
+            document.getElementById('writingArea').value = ''
+        }
+
+        function bold() {
+            document.getElementById('writingArea').style.fontWeight = 'Bold'
+        }
+
+        function italic() {
+            document.getElementById('writingArea').style.fontStyle = 'Italic'
+        }
+
+        function Underline() {
+            document.getElementById('writingArea').style.textDecorationLine = 'Underline'
+        }
+
+        function left() {
+            document.getElementById('writingArea').style.textAlign = 'left'
+        }
+
+        function center() {
+            document.getElementById('writingArea').style.textAlign = 'center'
+        }
+
+        function right() {
+            document.getElementById('writingArea').style.textAlign = 'right'
+        }
+
+        function Uppercase() {
+            document.getElementById('writingArea').style.textTransform = 'Uppercase'
+        }
+
+        function Lowercase() {
+            document.getElementById('writingArea').style.textTransform = 'Lowercase'
+        }
+
+        function Capitalize() {
+            document.getElementById('writingArea').style.textTransform = 'Capitalize'
+        }
+
+    </script>
 </head>
 
 <body>
@@ -17,43 +58,43 @@
         <div class="flex-justify-center px-2 text-center">
         <!--I want the buttons to be evenly next to eachother with a purple border-->
             <button class="border-4 border-purple-300 rounded"
-            onclick="document.getElementById('writingArea').style.fontWeight = 'Bold'">
+            onclick="bold()">
             Bold</button>
 
             <button class="border-4 border-purple-300 rounded" 
-            onclick="document.getElementById('writingArea').style.fontStyle = 'Italic'">
+            onclick="italic()">
             Italic</button>
 
             <button class="border-4 border-purple-300 rounded" 
-            onclick="document.getElementById('writingArea').style.textDecorationLine = 'Underline'">
+            onclick="Underline()">
             Underline</button>
 
             <button class="border-4 border-purple-300 rounded"
-            onclick="document.getElementById('writingArea').style.textAlign = 'left'">
+            onclick="left()">
             LA</button>
 
             <button class="border-4 border-purple-300 rounded"
-            onclick="document.getElementById('writingArea').style.textAlign = 'center'">
+            onclick="center()">
             CA</button>
 
             <button class="border-4 border-purple-300 rounded"
-            onclick="document.getElementById('writingArea').style.textAlign = 'right'">
+            onclick="right()">
             RA</button>
 
             <button class="border-4 border-purple-300 rounded"
-            onclick="document.getElementById('writingArea').style.textTransform = 'Uppercase'">
+            onclick="Uppercase()">
             Upper Case</button>
 
             <button class="border-4 border-purple-300 rounded"
-            onclick="document.getElementById('writingArea').style.textTransform = 'Lowercase'">
+            onclick="Lowercase()">
             Lower Case</button>
 
             <button class="border-4 border-purple-300 rounded"
-            onclick="document.getElementById('writingArea').style.textTransform = 'Capitalize'">
+            onclick="Capitalize()">
             Capitalize</button>
 
             <button class="border-4 border-purple-300 rounded" 
-                onclick="document.getElementById('writingArea').value = ''">
+                onclick="clearScreen ()">
                 Clear Text
             </button>   
         </div>
