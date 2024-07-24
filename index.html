@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="w-6/12 mx-auto">
+        <h1 class="text-3xl font-bold text-purple-300 text-center mt-6">
+            TEXT EDITOR
+        </h1>
+        <hr class="my-5">
+        <div class="flex-justify-center px-2 text-center">
+        <!--I want the buttons to be evenly next to eachother with a purple border-->
+            <button class="border-4 border-purple-300 rounded"
+            onclick="document.getElementById('writingArea').style.fontWeight = 'Bold'">
+            Bold</button>
+
+            <button class="border-4 border-purple-300 rounded" 
+            onclick="document.getElementById('writingArea').style.fontStyle = 'Italic'">
+            Italic</button>
+
+            <button class="border-4 border-purple-300 rounded" 
+            onclick="document.getElementById('writingArea').style.textDecorationLine = 'Underline'">
+            Underline</button>
+
+            <button class="border-4 border-purple-300 rounded"
+            onclick="document.getElementById('writingArea').style.textAlign = 'left'">
+            LA</button>
+
+            <button class="border-4 border-purple-300 rounded"
+            onclick="document.getElementById('writingArea').style.textAlign = 'center'">
+            CA</button>
+
+            <button class="border-4 border-purple-300 rounded"
+            onclick="document.getElementById('writingArea').style.textAlign = 'right'">
+            RA</button>
+
+            <button class="border-4 border-purple-300 rounded"
+            onclick="document.getElementById('writingArea').style.textTransform = 'Uppercase'">
+            Upper Case</button>
+
+            <button class="border-4 border-purple-300 rounded"
+            onclick="document.getElementById('writingArea').style.textTransform = 'Lowercase'">
+            Lower Case</button>
+
+            <button class="border-4 border-purple-300 rounded"
+            onclick="document.getElementById('writingArea').style.textTransform = 'Capitalize'">
+            Capitalize</button>
+
+            <button class="border-4 border-purple-300 rounded" 
+                onclick="document.getElementById('writingArea').value = ''">
+                Clear Text
+            </button>   
+        </div>
+        <textarea class="border-4 border-purple-300 mt-6 w-full mx-auto" id="writingArea" cols="90" rows="20" placeholder="Your Text Here">
+
+        </textarea>
+    </main>
+</body>
+</html>
